@@ -2,8 +2,11 @@
 !.*
 .DS_Store
 .m2
+.ssh
 .bash_histroy
 .bash_profile
 .profile
 .zsh_history
 .Trash/
+.vim
+.zsh-update
