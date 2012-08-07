@@ -37,3 +37,6 @@ function s:CdIfDirectory(directory)
   endif
 endfunction
 
+autocmd VimEnter * NERDTree
+autocmd VimEnter * wincmd p
+
