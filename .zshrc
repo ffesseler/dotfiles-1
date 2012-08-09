@@ -41,6 +41,7 @@ export EDITOR=mvim
 alias less=$PAGER
 alias zless=$PAGER
 alias qm="mvn -DskipTests -DskipITs -Dmaven.test.skip"
+alias tmux="TERM=screen-256color-bce tmux"
 
 pull-mvn () {
     PULL=$(git pull)
