@@ -15,9 +15,10 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-markdown'
 Bundle 'mattn/gist-vim'
-Bundle 'angloss/vim-javascript'
+Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'hail2u/vim-css3-syntax'
+Bundle 'scrooloose/nerdcommenter'
 
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
@@ -96,6 +97,7 @@ noremap <Space> <PageDown>
 nmap , <C-w><C-w>
 vnoremap < <gv
 vnoremap > >gv
+nmap <D-/> <leader>c
 
 
 " remember last file location
