@@ -36,7 +36,7 @@ export PATH=$HOME/local/node/bin:$PATH
 export NODE_PATH=$HOME/local/node:$HOME/local/node/lib/node_modules
 export SVNROOT=https://svn.semantico.net/repos/main/
 export SVN_EDITOR=vi
-export PAGER=~/bin/vimpager
+export PAGER=vimpager
 export EDITOR=mvim
 alias less=$PAGER
 alias zless=$PAGER
@@ -63,3 +63,5 @@ sipp2 () {
 [ -s "/Users/dans/.scm_breeze/scm_breeze.sh" ] && source "/Users/dans/.scm_breeze/scm_breeze.sh"
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
