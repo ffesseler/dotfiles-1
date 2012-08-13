@@ -11,6 +11,9 @@
 .Trash/
 .zsh-update
 .gitconfig.swp
+.vim/backup
+.vim/undo
+.vim/bundle
 .viminfo
 .zcompdump
 .*.swp
@@ -33,3 +36,4 @@
 .smb
 .config
 .subversion
+.cassandra*
