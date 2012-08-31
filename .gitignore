@@ -38,3 +38,4 @@
 .subversion
 .cassandra*
 .cups
+.jline-clojure.main.history
