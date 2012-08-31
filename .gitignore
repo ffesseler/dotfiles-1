@@ -13,7 +13,7 @@
 .gitconfig.swp
 .vim/backup
 .vim/undo
-.vim/bundle
+.vim/bundle/*
 .viminfo
 .zcompdump
 .*.swp
@@ -37,3 +37,4 @@
 .config
 .subversion
 .cassandra*
+.cups
