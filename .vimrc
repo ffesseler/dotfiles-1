@@ -19,6 +19,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'vim-scripts/VimClojure'
 
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
