@@ -20,6 +20,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'hail2u/vim-css3-syntax'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/VimClojure'
+Bundle 'davidbeckingsale/Smyck-Color-Scheme'
 
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
@@ -61,8 +62,7 @@ filetype plugin indent on
 
 set autoindent
 
-set background=dark
-colorscheme solarized
+colorscheme smyck
 
 
 " highlight last search term
