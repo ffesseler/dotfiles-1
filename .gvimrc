@@ -40,3 +40,4 @@ endfunction
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 
+set guifont=Cousine:h14
