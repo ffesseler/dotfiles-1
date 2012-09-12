@@ -77,6 +77,7 @@ set smartcase
 set gdefault
 
 
+
 au BufNewFile,BufRead *.json set ft=javascript
 
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
