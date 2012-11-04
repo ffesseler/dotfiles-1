@@ -21,6 +21,7 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'davidbeckingsale/Smyck-Color-Scheme'
+Bundle 'editorconfig/editorconfig-vim'
 
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
