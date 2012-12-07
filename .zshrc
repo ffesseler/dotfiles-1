@@ -65,3 +65,5 @@ sipp2 () {
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+$DISABLE_AUTO_UPDATE = true
