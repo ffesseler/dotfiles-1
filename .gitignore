@@ -39,3 +39,11 @@
 .cassandra*
 .cups
 .jline-clojure.main.history
+.pgadmin_histoqueries
+.pgpass
+.psql_history
+.bower
+.java
+.mocksmtp
+.node-gyp
+.htoprc
