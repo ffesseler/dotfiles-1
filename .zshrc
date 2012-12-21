@@ -21,14 +21,14 @@ export ZSH_THEME="simple"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git history-substring-search)
+plugins=(git history-substring-search django python)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 unsetopt correct_all
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/bin
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
