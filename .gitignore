@@ -47,3 +47,12 @@
 .mocksmtp
 .node-gyp
 .htoprc
+.yeoman
+.gradle
+.gdb_history
+.Xauthority
+.keepassx
+.lesshst
+.pcsx
+.pip
+.ranktracker.properties

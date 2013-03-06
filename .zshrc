@@ -62,7 +62,7 @@ sipp2 () {
 
 [ -s "/Users/dans/.scm_breeze/scm_breeze.sh" ] && source "/Users/dans/.scm_breeze/scm_breeze.sh"
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_15.jdk/Contents/Home
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 

@@ -22,6 +22,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'davidbeckingsale/Smyck-Color-Scheme'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'vim-scripts/groovy.vim'
 
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
@@ -86,6 +87,8 @@ au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set f
 
 au BufNewFile,BufRead *.ftl set ft=html.ftl
 
+au BufNewFile,BufRead *.gradle setf groovy
+au BufNewFile,BufRead *.cljs set ft=clojure
 
 " press F2 before a paste to turn off autoindent
 set pastetoggle=<F2>
