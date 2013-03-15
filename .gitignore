@@ -56,3 +56,6 @@
 .pcsx
 .pip
 .ranktracker.properties
+.lighttable
+.irssi
+*.tmp
