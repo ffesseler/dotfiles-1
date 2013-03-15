@@ -38,31 +38,15 @@ export SVNROOT=https://svn.semantico.net/repos/main/
 export SVN_EDITOR=vi
 export PAGER=vimpager
 export EDITOR=mvim
-alias less=$PAGER
-alias zless=$PAGER
-alias qm="mvn -DskipTests -DskipITs -Dmaven.test.skip"
-alias tmux="TERM=screen-256color-bce tmux"
 
-pull-mvn () {
-    PULL=$(git pull)
-    if [ $PULL != "Already up-to-date." ]
-        then
-            qm
-    fi
-}
-
-sipp2 () {
-    PWD=$(pwd)
-    cd ~/src/sipp2/sipp2-parent
-    pull-mvn
-    cd ~/src/sipp2/sipp2-core
-    pull-mvn
-    cd $PWD
-}
+. ~/.aliases.sh
 
 [ -s "/Users/dans/.scm_breeze/scm_breeze.sh" ] && source "/Users/dans/.scm_breeze/scm_breeze.sh"
 
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_15.jdk/Contents/Home
+JAVA_FILE=~/.jdk.sh
+if [ -f $JAVA_FILE ]; then
+    . $JAVA_FILE
+fi
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 

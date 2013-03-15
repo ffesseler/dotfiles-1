@@ -59,3 +59,4 @@
 .lighttable
 .irssi
 *.tmp
+.jdk.sh
