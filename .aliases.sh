@@ -64,3 +64,7 @@ alias fs="stat -f \"%z bytes\""
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+
+dgc () {
+    git commit "$@" --author="Dan Shearmur <dan@shearmur.co.uk>"
+}
