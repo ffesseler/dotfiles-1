@@ -11,8 +11,10 @@
 .Trash/
 .zsh-update
 .gitconfig.swp
-.vim/backup
-.vim/undo
+.vim/backup/*
+!.vim/backup/.gitkeep
+.vim/undo/*
+!.vim/undo/.gitkeep
 .vim/bundle/*
 .viminfo
 .zcompdump
