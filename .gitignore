@@ -62,3 +62,8 @@
 .irssi
 *.tmp
 .jdk.sh
+.jitsu*
+.zcompdump*
+.grunt-init
+.af_*
+.node-completion
