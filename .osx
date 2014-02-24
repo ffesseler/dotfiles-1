@@ -245,6 +245,10 @@ defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.Web
 # Add a context menu item for showing the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+# Stop safari opening the same tabs from last quit
+# https://github.com/karma-runner/karma-safari-launcher/issues/6
+defaults write com.apple.Safari ApplePersistenceIgnoreState YES
+
 ###############################################################################
 # Address Book, Dashboard, iCal, iTunes, Mail, and Disk Utility               #
 ###############################################################################
