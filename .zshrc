@@ -28,7 +28,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 unsetopt correct_all
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/bin:~/.node/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/bin:$HOME/.rbenv/bin:~/.node/bin
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 

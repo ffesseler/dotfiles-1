@@ -63,3 +63,8 @@
 *.tmp
 .jdk.sh
 .node
+.jitsu*
+.zcompdump*
+.grunt-init
+.af_*
+.node-completion
