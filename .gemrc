@@ -1,0 +1,4 @@
+-e install: --no-rdoc --no-ri
+update: --no-rdoc --no-ri
+-e install: --no-rdoc --no-ri
+update: --no-rdoc --no-ri
