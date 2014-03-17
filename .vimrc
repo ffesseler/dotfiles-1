@@ -24,6 +24,10 @@ Bundle 'davidbeckingsale/Smyck-Color-Scheme'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'vim-scripts/groovy.vim'
 Bundle 'alampros/cf.vim'
+Bundle 'tjennings/git-grep-vim'
+Bundle 'kien/ctrlp.vim'
+
+let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
 
 set backupdir=~/.vim/backup
 set directory=~/.vim/backup
