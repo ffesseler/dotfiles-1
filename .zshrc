@@ -2,7 +2,7 @@ export ZSH=$HOME/.oh-my-zsh
 export ZSH_THEME="simple"
 export DISABLE_AUTO_UPDATE=true
 
-plugins=(git history-substring-search)
+plugins=(git history-substring-search ruby rbenv redis-cli)
 
 source $ZSH/oh-my-zsh.sh
 
