@@ -15,7 +15,7 @@ export NODE_PATH=$HOME/local/node:$HOME/local/node/lib/node_modules
 
 export SVN_EDITOR=vi
 export PAGER=vimpager
-export EDITOR=mvim
+export EDITOR='mvim -f'
 
 . ~/.aliases.sh
 
