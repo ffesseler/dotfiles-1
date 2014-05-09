@@ -63,7 +63,7 @@ set softtabstop=4
 set expandtab
 
 " highlight tabs & trailing spaces
-set list listchars=tab:\ \ ,trail:·
+set list listchars=tab:\>\ ,trail:·
 
 filetype plugin indent on
 
