@@ -57,7 +57,7 @@ set scrolloff=5
 set sidescrolloff=5
 
 
-set tabstop=4
+set tabstop=6
 set shiftwidth=4
 set softtabstop=4
 set expandtab
