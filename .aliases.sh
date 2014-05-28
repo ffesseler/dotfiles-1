@@ -68,3 +68,12 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 dgc () {
     git commit "$@" --author="Dan Shearmur <dan@shearmur.co.uk>"
 }
+
+git-sed () {
+    git grep -l "$1" | xargs sed -i "" "s/$1/$2/g"
+}
+
+alias npms="npm install --save"
+alias npmsd="npm install --save-dev"
+
+dash() { open dash://${1} }
