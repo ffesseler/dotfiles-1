@@ -10,6 +10,8 @@ Bundle 'skammer/vim-css-color'
 Bundle 'chaquotay/ftl-vim-syntax'
 Bundle 'groenewege/vim-less'
 Bundle 'mattn/emmet-vim'
+Bundle 'tpope/vim-git'
+Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'scrooloose/nerdtree'
@@ -26,6 +28,8 @@ Bundle 'vim-scripts/groovy.vim'
 Bundle 'alampros/cf.vim'
 Bundle 'tjennings/git-grep-vim'
 Bundle 'kien/ctrlp.vim'
+Bundle 'AndrewRadev/splitjoin.vim'
+Bundle 'rizzatti/dash.vim'
 
 let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
 
