@@ -112,6 +112,7 @@ vnoremap < <gv
 vnoremap > >gv
 nmap <D-/> <leader>c
 
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " remember last file location
 if has("autocmd")
