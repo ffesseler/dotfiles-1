@@ -20,7 +20,6 @@ cask install divvy
 cask install dropbox
 cask install evernote
 cask install seil
-cask install keyremap4macbook
 cask install the-unarchiver
 
 # hacking

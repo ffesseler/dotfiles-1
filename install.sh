@@ -40,3 +40,12 @@ npm install -g grunt-cli bower generator-webapp generator-angular generator-reac
 
 # osx prefs
 ./osx.sh
+
+# remap capslock to F19
+/Applications/Seil.app/Contents/Library/bin/seil set keycode_capslock 80
+
+# set alfred to use F19
+defaults write com.runningwithcrayons.Alfred-Preferences hotkey.default -dict key -int 80
+
+# reboot
+sudo reboot now
