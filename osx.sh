@@ -215,6 +215,9 @@ defaults write com.apple.dock orientation -string left
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
+# Autohide dock
+defaults write com.apple.dock autohide -bool true
+
 # Reset Launchpad
 find ~/Library/Application\ Support/Dock -name "*.db" -maxdepth 1 -delete
 
