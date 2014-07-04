@@ -55,13 +55,11 @@ defaults write com.runningwithcrayons.Alfred-Preferences hotkey.default -dict ke
 
 # generate ssh keys
 SSH=~/.ssh
-if [ -d $SSH ]
+if [ ! -d $SSH ]
 then
-  cd $SSH
-else
   mkdir $SSH
-  cd $SSH
 fi
+cd $SSH
 if [ ! -f $SSH/id_rsa ]
 then
   ssh-keygen -t rsa -C "dan.shearmur@gmail.com"
