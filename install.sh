@@ -53,5 +53,19 @@ npm install -g grunt-cli bower generator-webapp generator-angular generator-reac
 # set alfred to use F19
 defaults write com.runningwithcrayons.Alfred-Preferences hotkey.default -dict key -int 80
 
+# generate ssh keys
+SSH=~/.ssh
+if [ -d $SSH ]
+then
+  cd $SSH
+else
+  mkdir $SSH
+  cd $SSH
+fi
+if [ ! -f $SSH/id_rsa ]
+then
+  ssh-keygen -t rsa -C "dan.shearmur@gmail.com"
+fi
+
 # reboot
 sudo reboot now
