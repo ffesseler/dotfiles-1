@@ -1,3 +1,3 @@
 From your home directory
 
-    `curl -L http://install.ohmyz.sh | sh`
+    curl -L https://raw.githubusercontent.com/danshearmur/dotfiles/master/install.sh | sh
