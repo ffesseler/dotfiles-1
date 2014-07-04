@@ -10,6 +10,9 @@ install vim
 install git
 install gti
 install tig
+install zsh
+install wget
+install curl
 
 # cask
 install caskroom/cask/brew-cask
