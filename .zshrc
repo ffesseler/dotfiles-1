@@ -12,6 +12,7 @@ export PATH=$HOME/bin:$PATH
 export PATH=$HOME/.rbenv/bin:$PATH
 export PATH=$HOME/.node/bin:$HOME/local/node/bin:$PATH
 export NODE_PATH=$HOME/local/node:$HOME/local/node/lib/node_modules
+export NODE_PATH=$HOME/.node:$HOME/.node/lib/node_modules:$NODE_PATH
 
 export SVN_EDITOR=vi
 export PAGER=vimpager
@@ -24,3 +25,8 @@ eval "$(rbenv init - zsh)"
 # FIX https://github.com/robbyrussell/oh-my-zsh/pull/1355
 bindkey '\eOA' history-substring-search-up
 bindkey '\eOB' history-substring-search-down
+
+if [ -d ~/.nvm ]
+then
+  source ~/.nvm/nvm.sh
+fi
