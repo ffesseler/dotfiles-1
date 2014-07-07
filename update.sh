@@ -2,7 +2,9 @@
 
 cd ~/.dotfiles
 
+git stash
 git pull
+git stash pop
 
 # update all software
 brew update
@@ -27,5 +29,5 @@ for filename in .*; do
   fi
 done
 
-# setup vim
+# update vim
 vim +BundleInstall +qall
