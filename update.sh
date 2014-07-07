@@ -11,6 +11,8 @@ brew bundle
 
 # update submodules to head of master
 git submodule foreach git pull origin master
+git add .oh-my-zsh .vim/bundle/vundle
+git commit -m "update submodules to master"
 
 # link all the dotfiles
 for filename in .*; do
@@ -24,9 +26,6 @@ for filename in .*; do
     fi
   fi
 done
-
-# use zsh
-chsh -s /bin/zsh
 
 # setup vim
 vim +BundleInstall +qall
