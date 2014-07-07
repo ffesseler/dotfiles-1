@@ -16,6 +16,7 @@ install curl
 
 # cask
 install caskroom/cask/brew-cask
+tap caskroom/versions
 
 # helpers
 cask install alfred
@@ -32,9 +33,10 @@ cask install sourcetree
 cask install mou
 
 # browsers
-cask install google-chrome
-cask install chromium
-cask install firefox
-cask install opera
-cask install opera-next
-cask install opera-mobile-emulator
+cask install google-chrome google-chrome-beta google-chrome-canary chromium
+cask install firefox firefox-beta firefox-aurora firefox-nightly
+cask install opera opera-developer opera-next opera-mobile-emulator
+
+# Quicklook plugins
+cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
+cask install quicklook-csv betterzipql webp-quicklook
