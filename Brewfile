@@ -13,6 +13,7 @@ install tig
 install zsh
 install wget
 install curl
+install tree
 
 # cask
 install caskroom/cask/brew-cask
