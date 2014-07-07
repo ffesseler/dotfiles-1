@@ -5,14 +5,14 @@ cd ~/
 # install homebrew
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 
+# clone the dotfiles
+git clone git@github.com:danshearmur/dotfiles.git .dotfiles
+cd ~/.dotfiles
+
 # install all the things
 brew update
 brew upgrade
 brew bundle
-
-# clone the dotfiles
-git clone git@github.com:danshearmur/dotfiles.git .dotfiles
-cd ~/.dotfiles
 
 # dotfile submodules
 git submodule init
