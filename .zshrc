@@ -17,7 +17,7 @@ export SVN_EDITOR=vi
 export PAGER=vimpager
 export EDITOR='mvim -f'
 
-. ~/.aliases.sh
+source ~/.dotfiles/aliases.sh
 
 eval "$(rbenv init - zsh)"
 
