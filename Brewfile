@@ -19,7 +19,6 @@ install caskroom/cask/brew-cask
 
 # helpers
 cask install alfred
-cask install divvy
 cask install dropbox
 cask install evernote
 cask install seil
