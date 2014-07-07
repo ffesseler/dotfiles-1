@@ -14,6 +14,7 @@ install zsh
 install wget
 install curl
 install tree
+install vimpager
 
 # cask
 install caskroom/cask/brew-cask
