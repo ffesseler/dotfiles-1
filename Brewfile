@@ -15,6 +15,7 @@ install wget
 install curl
 install tree
 install vimpager
+install ansible
 
 # cask
 install caskroom/cask/brew-cask
