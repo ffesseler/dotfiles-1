@@ -7,4 +7,4 @@ rbenv global 2.1.2
 # gems
 gem update --system
 gem update
-gem install bundle sass haste
+yes | gem install bundle sass haste
