@@ -19,17 +19,7 @@ brew upgrade
 brew bundle
 
 # link all the dotfiles
-for filename in .*; do
-  if [ $filename != ".git" ] && [ $filename != ".gitmodules" ] && [ $filename != "." ] && [ $filename != ".." ]
-  then
-    if [ -d $filename ]
-    then
-      ln -s ~/.dotfiles/$filename ~/$filename
-    else
-      ln $filename ..
-    fi
-  fi
-done
+./link.sh
 
 # use zsh
 chsh -s /bin/zsh
