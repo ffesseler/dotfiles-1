@@ -15,6 +15,7 @@ install curl
 install tree
 install vimpager
 install ansible
+install gist
 
 # daft stuff
 install gti sl
