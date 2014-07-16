@@ -6,15 +6,15 @@ git stash
 git pull
 git stash pop
 
-# update all software
-brew update
-brew upgrade
-brew bundle
-
 # update submodules to head of master
 git submodule foreach git pull origin master
 git add .oh-my-zsh .vim/bundle/vundle
 git commit -m "update submodules to master"
+
+# update all software
+brew update
+brew upgrade
+brew bundle
 
 # link all the dotfiles
 for filename in .*; do
@@ -31,3 +31,15 @@ done
 
 # update vim
 vim +BundleInstall +qall
+
+# node
+./node.sh
+
+# ruby stuff
+./ruby.sh
+
+# osx prefs
+./osx.sh
+
+# capslock
+./caps.sh

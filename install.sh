@@ -9,14 +9,14 @@ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 git clone git@github.com:danshearmur/dotfiles.git .dotfiles
 cd ~/.dotfiles
 
+# dotfile submodules
+git submodule init
+git submodule update
+
 # install all the things
 brew update
 brew upgrade
 brew bundle
-
-# dotfile submodules
-git submodule init
-git submodule update
 
 # link all the dotfiles
 for filename in .*; do
@@ -37,27 +37,17 @@ chsh -s /bin/zsh
 # setup vim
 vim +BundleInstall +qall
 
-# set up ruby/rbenv
-rbenv install 2.1.2
-rbenv global 2.1.2
+# node
+./node.sh
 
-# grunt/bower/yo
-npm install -g grunt-cli bower generator-webapp generator-angular generator-react
-
-# gems
-gem update --system
-gem install bundle
-gem install sass
-gem install haste
+# ruby stuff
+./ruby.sh
 
 # osx prefs
 ./osx.sh
 
-# remap capslock to F19
-/Applications/Seil.app/Contents/Library/bin/seil set keycode_capslock 80
-
-# set alfred to use F19
-defaults write com.runningwithcrayons.Alfred-Preferences hotkey.default -dict key -int 80
+# capslock
+./caps.sh
 
 # generate ssh keys
 SSH=~/.ssh
@@ -71,5 +61,5 @@ then
   ssh-keygen -t rsa -C "dan.shearmur@gmail.com"
 fi
 
-# reboot
+# reboot (for seil)
 sudo reboot now
