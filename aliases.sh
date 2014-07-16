@@ -77,3 +77,5 @@ alias npms="npm install --save"
 alias npmsd="npm install --save-dev"
 
 dash() { open dash://${1} }
+
+alias sl="sl;ls"

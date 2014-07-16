@@ -8,7 +8,6 @@ install ruby-build
 # hacking (terminal)
 install vim
 install git
-install gti
 install tig
 install zsh
 install wget
@@ -16,6 +15,9 @@ install curl
 install tree
 install vimpager
 install ansible
+
+# daft stuff
+install gti sl
 
 # cask
 install caskroom/cask/brew-cask
