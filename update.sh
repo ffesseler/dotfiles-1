@@ -7,7 +7,7 @@ git pull
 git stash pop
 
 # update submodules to head of master
-git submodule foreach git pull origin master
+git submodule foreach git reset origin/master --hard
 git add .oh-my-zsh .vim/bundle/vundle
 git commit -m "update submodules to master"
 
