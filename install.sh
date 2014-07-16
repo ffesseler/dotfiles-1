@@ -20,7 +20,7 @@ brew bundle
 
 # link all the dotfiles
 for filename in .*; do
-  if [ $filename != ".git" ] && [ $filename != "." ] && [ $filename != ".." ]
+  if [ $filename != ".git" ] && [ $filename != ".gitmodules" ] && [ $filename != "." ] && [ $filename != ".." ]
   then
     if [ -d $filename ]
     then
