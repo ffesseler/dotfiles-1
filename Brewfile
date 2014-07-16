@@ -30,6 +30,7 @@ cask install dropbox
 cask install evernote
 cask install seil
 cask install the-unarchiver
+cask install istat-menus
 
 # hacking
 cask install iterm2
