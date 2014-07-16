@@ -44,6 +44,12 @@ rbenv global 2.1.2
 # grunt/bower/yo
 npm install -g grunt-cli bower generator-webapp generator-angular generator-react
 
+# gems
+gem update --system
+gem install bundle
+gem install sass
+gem install haste
+
 # osx prefs
 ./osx.sh
 
