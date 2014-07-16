@@ -19,8 +19,7 @@ export PATH=$HOME/.node/bin:$HOME/local/node/bin:$PATH
 # make local binaries have priority (e.g. stuff installed with homebrew)
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
-export NODE_PATH=$HOME/local/node:$HOME/local/node/lib/node_modules
-export NODE_PATH=$HOME/.node:$HOME/.node/lib/node_modules:$NODE_PATH
+export NODE_PATH=$HOME/.node/bin:$HOME/.node/lib/node_modules:$NODE_PATH
 
 # VIM
 #----
