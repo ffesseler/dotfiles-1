@@ -125,3 +125,5 @@ if has("autocmd")
 endif
 
 syntax on
+
+command -nargs=+ Ggr execute 'Ggrep' <q-args> | cw
