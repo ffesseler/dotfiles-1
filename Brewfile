@@ -37,6 +37,7 @@ cask install macvim
 cask install gitx-rowanj
 cask install sourcetree
 cask install mou
+cask install virtualbox
 
 # browsers
 cask install google-chrome google-chrome-beta google-chrome-canary chromium
