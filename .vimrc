@@ -30,6 +30,7 @@ Bundle 'tjennings/git-grep-vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'AndrewRadev/splitjoin.vim'
 Bundle 'rizzatti/dash.vim'
+Bundle 'fatih/vim-go'
 
 let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
 
@@ -127,3 +128,10 @@ endif
 syntax on
 
 command -nargs=+ Ggr execute 'Ggrep' <q-args> | cw
+
+
+" golang stuff
+" $GOPATH
+let g:go_bin_path = expand("~/src/gocode/bin")
+" disable go autoinstall
+let g:go_disable_autoinstall = 1

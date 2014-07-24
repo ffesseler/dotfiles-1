@@ -20,6 +20,11 @@ export PATH=$HOME/.node/bin:$HOME/local/node/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export NODE_PATH=$HOME/.node/bin:$HOME/.node/lib/node_modules:$NODE_PATH
+# go
+export GOROOT=`go env GOROOT`
+export GOPATH=~/src/gocode
+export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOPATH/bin
 
 # VIM
 #----

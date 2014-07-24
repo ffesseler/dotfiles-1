@@ -33,6 +33,9 @@ vim +BundleInstall +qall
 # ruby stuff
 ./ruby.sh
 
+# go stuff
+./golang.sh
+
 # osx prefs
 ./osx.sh
 

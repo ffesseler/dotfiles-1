@@ -4,11 +4,13 @@
 install node
 install rbenv
 install ruby-build
+install go
 
 # hacking (terminal)
 install vim
 install git
 install tig
+install hg
 install zsh
 install wget
 install curl
