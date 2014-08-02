@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# install seil
+open /opt/homebrew-cask/Caskroom/seil/10.9.0/Seil.pkg
+
 # remap capslock to F19
 /Applications/Seil.app/Contents/Library/bin/seil set keycode_capslock 80
 
