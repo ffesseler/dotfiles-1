@@ -27,6 +27,9 @@ chsh -s /bin/zsh
 # setup vim
 vim +BundleInstall +qall
 
+# setup iterm
+open smyck/Smyck.itermcolors
+
 # node
 ./node.sh
 

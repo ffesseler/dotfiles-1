@@ -4,3 +4,6 @@
 [submodule "vim/bundle/vundle"]
 	path = .vim/bundle/vundle
 	url = https://github.com/gmarik/vundle.git
+[submodule "smyck"]
+	path = smyck
+	url = git@github.com:hukl/Smyck-Color-Scheme.git
