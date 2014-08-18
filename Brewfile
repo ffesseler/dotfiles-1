@@ -34,6 +34,8 @@ cask install seil
 cask install the-unarchiver
 cask install istat-menus
 cask install slack
+cask install rdio
+cask install soundcleod
 
 # hacking
 cask install iterm2
