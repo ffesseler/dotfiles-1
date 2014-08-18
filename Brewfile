@@ -33,6 +33,7 @@ cask install evernote
 cask install seil
 cask install the-unarchiver
 cask install istat-menus
+cask install slack
 
 # hacking
 cask install iterm2
