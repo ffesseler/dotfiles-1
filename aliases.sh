@@ -82,3 +82,10 @@ function dataurl() {
     fi
     echo "data:${mimeType};base64,$(openssl base64 -in "$1" | tr -d '\n')"
 }
+
+function gz() {
+    echo "orig size    (bytes): "
+    cat "$1" | wc -c
+    echo "gzipped size (bytes): "
+    gzip -c "$1" | wc -c
+}
