@@ -8,6 +8,7 @@ install go
 
 # hacking (terminal)
 install vim
+install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
 install git
 install tig
 install hg

@@ -9,3 +9,7 @@ for filename in .*; do
     fi
   fi
 done
+
+# for neovim
+ln -s ~/.vim ~/.nvim
+ln -s ~/.vimrc ~/.nvimrc
