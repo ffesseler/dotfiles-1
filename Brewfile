@@ -41,7 +41,7 @@ cask install soundcleod
 # hacking
 cask install iterm2
 cask install macvim
-cask install gitx-rowanj
+cask install rowanj-gitx
 cask install sourcetree
 cask install mou
 cask install virtualbox
