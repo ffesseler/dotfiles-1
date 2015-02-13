@@ -11,10 +11,8 @@ git submodule foreach git reset origin/master --hard
 git add .oh-my-zsh .vim/bundle/vundle
 git commit -m "update submodules to master"
 
-# update all software
-brew update
-brew upgrade
-brew bundle
+# update/install software with homebrew
+./brew.sh
 
 # link all the dotfiles
 ./link.sh
