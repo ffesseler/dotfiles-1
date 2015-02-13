@@ -14,7 +14,7 @@ git submodule init
 git submodule update
 
 # install all the things
-./brew.sh
+./bundle.sh
 
 # link all the dotfiles
 ./link.sh

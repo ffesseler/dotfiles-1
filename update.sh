@@ -12,7 +12,7 @@ git add .oh-my-zsh .vim/bundle/vundle
 git commit -m "update submodules to master"
 
 # update/install software with homebrew
-./brew.sh
+./bundle.sh
 
 # link all the dotfiles
 ./link.sh
