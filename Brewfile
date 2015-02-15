@@ -46,6 +46,7 @@ cask install sourcetree
 cask install mou
 cask install virtualbox
 cask install charles
+cask install unetbootin
 
 # browsers
 cask install google-chrome google-chrome-beta google-chrome-canary chromium
