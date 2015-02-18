@@ -56,3 +56,5 @@ cask install opera opera-developer opera-next opera-mobile-emulator
 # Quicklook plugins
 cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 cask install quicklook-csv betterzipql webp-quicklook
+
+cask install garmin-communicator
