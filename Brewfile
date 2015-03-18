@@ -5,6 +5,7 @@ install node
 install rbenv
 install ruby-build
 install go
+install tinyscheme
 
 # hacking (terminal)
 install vim
