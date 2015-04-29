@@ -5,6 +5,7 @@ install node
 install rbenv
 install ruby-build
 install go
+install tinyscheme
 
 # hacking (terminal)
 install vim
@@ -41,11 +42,12 @@ cask install soundcleod
 # hacking
 cask install iterm2
 cask install macvim
-cask install gitx-rowanj
+cask install rowanj-gitx
 cask install sourcetree
 cask install mou
 cask install virtualbox
 cask install charles
+cask install unetbootin
 
 # browsers
 cask install google-chrome google-chrome-beta google-chrome-canary chromium
@@ -55,3 +57,5 @@ cask install opera opera-developer opera-next opera-mobile-emulator
 # Quicklook plugins
 cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 cask install quicklook-csv betterzipql webp-quicklook
+
+cask install garmin-communicator
