@@ -20,6 +20,9 @@ install tree
 install vimpager
 install ansible
 install gist
+install docker
+install boot2docker
+install docker-compose
 
 # daft stuff
 install gti sl

@@ -42,3 +42,5 @@ if [ -d ~/.nvm ]
 then
   source ~/.nvm/nvm.sh
 fi
+
+$(boot2docker shellinit)
