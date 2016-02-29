@@ -42,8 +42,3 @@ if [ -d ~/.nvm ]
 then
   source ~/.nvm/nvm.sh
 fi
-
-if [ `boot2docker status` != "poweroff" ]
-then
-  $(boot2docker shellinit)
-fi
