@@ -40,7 +40,6 @@ alias g="git"
 alias v="mvim"
 alias vim="mvim"
 alias :e="mvim"
-alias mvim="nvim"
 
 # File size
 alias fs="stat -f \"%z bytes\""
