@@ -6,6 +6,7 @@ install rbenv
 install ruby-build
 install go
 install tinyscheme
+install python3
 
 # hacking (terminal)
 install vim

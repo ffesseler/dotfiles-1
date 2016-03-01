@@ -43,6 +43,9 @@ open smyck/Smyck.itermcolors
 # capslock
 ./caps.sh
 
+# python
+./python.sh
+
 # generate ssh keys
 SSH=~/.ssh
 if [ ! -d $SSH ]

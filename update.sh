@@ -34,3 +34,6 @@ vim +BundleInstall +qall
 
 # capslock
 ./caps.sh
+
+# python
+./python.sh
