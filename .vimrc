@@ -31,6 +31,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'AndrewRadev/splitjoin.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'fatih/vim-go'
+Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
 
 let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
 
@@ -74,7 +75,7 @@ filetype plugin indent on
 
 set autoindent
 
-colorscheme smyck
+colorscheme dracula
 
 
 " highlight last search term
