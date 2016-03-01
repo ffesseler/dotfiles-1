@@ -43,6 +43,9 @@ open smyck/Smyck.itermcolors
 # capslock
 ./caps.sh
 
+# docker
+./docker.sh
+
 # python
 ./python.sh
 

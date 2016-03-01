@@ -23,6 +23,7 @@ install ansible
 install gist
 install docker
 install docker-compose
+install dlite
 
 # daft stuff
 install gti sl
