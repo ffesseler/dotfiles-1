@@ -40,7 +40,7 @@ cask install seil
 cask install the-unarchiver
 cask install istat-menus
 cask install slack
-cask install rdio
+cask install --appdir="/Applications" spotify
 cask install soundcleod
 
 # hacking
