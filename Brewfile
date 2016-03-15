@@ -42,6 +42,7 @@ cask install istat-menus
 cask install slack
 cask install --appdir="/Applications" spotify
 cask install soundcleod
+cask install dash
 
 # hacking
 cask install iterm2
@@ -52,6 +53,10 @@ cask install mou
 cask install virtualbox
 cask install charles
 cask install unetbootin
+cask install phpstorm
+casl install pgadmin3
+
+cask install java
 
 # browsers
 cask install google-chrome google-chrome-beta google-chrome-canary chromium
