@@ -89,3 +89,8 @@ function gz() {
     echo "gzipped size (bytes): "
     gzip -c "$1" | wc -c
 }
+
+alias j="node -e 'console.log(JSON.stringify(JSON.parse(require(\"fs\").readFileSync(process.argv[1])), null, 2))'"
+
+alias fuckingnginx="ssh -t e24 'sudo service nginx start'"
+alias midkit="cd /Users/dans/src/www/cgi-bin/midkit2"
