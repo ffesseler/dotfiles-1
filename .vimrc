@@ -24,7 +24,6 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'davidbeckingsale/Smyck-Color-Scheme'
 Bundle 'editorconfig/editorconfig-vim'
-Bundle 'vim-scripts/groovy.vim'
 Bundle 'alampros/cf.vim'
 Bundle 'tjennings/git-grep-vim'
 Bundle 'kien/ctrlp.vim'
@@ -32,6 +31,8 @@ Bundle 'AndrewRadev/splitjoin.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'fatih/vim-go'
 Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
 
@@ -44,10 +45,8 @@ set undoreload=10000
 " always use utf8
 set encoding=utf-8
 
-" show line numbers
-set number
-" show file position
-set ruler
+" show relative line numbers
+set rnu
 " always show status bar
 set laststatus=2
 " make backspace do what you expect
@@ -57,12 +56,12 @@ set shortmess=aI
 " always set terminal title
 set title
 " don't put ugly |s into vbars
-set fillchars=vert:\ 
+set fillchars=vert:\
 " always leave 5 lines around cursor
 set scrolloff=5
 set sidescrolloff=5
 
-
+" indenting
 set tabstop=6
 set shiftwidth=4
 set softtabstop=4
@@ -89,7 +88,10 @@ set smartcase
 " always replace all matches on line
 set gdefault
 
-
+" airline
+set guifont=Anonymous\ Pro\ for\ Powerline:h14
+let g:airline_powerline_fonts = 1
+let g:airline_theme="powerlineish"
 
 au BufNewFile,BufRead *.json set ft=javascript
 
@@ -116,7 +118,13 @@ noremap <Space> <PageDown>
 nmap , <C-w><C-w>
 vnoremap < <gv
 vnoremap > >gv
-nmap <D-/> <leader>c
+" cmd+/ comment
+nmap <D-/> <leader>c<space>
+" disable arrows
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
