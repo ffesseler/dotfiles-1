@@ -1,7 +1,7 @@
 # OH_MY_ZSH stuff
 #----------------
 export ZSH=$HOME/.oh-my-zsh
-export ZSH_THEME="simple"
+export ZSH_THEME="avit"
 export DISABLE_AUTO_UPDATE=true
 plugins=(git history-substring-search ruby rbenv redis-cli)
 source $ZSH/oh-my-zsh.sh
@@ -23,13 +23,12 @@ export GOPATH=~/src/gocode
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GOPATH/bin
 # make local binaries have priority (e.g. stuff installed with homebrew)
-export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:/usr/local/sbin
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
 
 # VIM
 #----
 export SVN_EDITOR=vi
-export PAGER=vimpager
 export EDITOR='mvim -f'
 
 source ~/.dotfiles/aliases.sh
@@ -42,3 +41,6 @@ if [ -d ~/.nvm ]
 then
   source ~/.nvm/nvm.sh
 fi
+
+# TIG
+export GIT_PAGER="tig"

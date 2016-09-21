@@ -3,10 +3,12 @@
     email = dan.shearmur@gmail.com
 [color]
     ui = auto
+	pager = false
 [core]
     whitespace = tab-in-indent,tabwidth=2
     fsyncobjectfiles = true
     preloadindex = true
+	pager = tig
 [branch]
     autosetuprebase = always
 [diff]
