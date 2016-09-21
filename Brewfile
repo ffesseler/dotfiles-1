@@ -9,6 +9,7 @@ install tinyscheme
 install python3
 
 # hacking (terminal)
+install zsh
 install vim
 install --HEAD https://raw.github.com/neovim/neovim/master/neovim.rb
 install git

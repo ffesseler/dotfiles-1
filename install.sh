@@ -20,7 +20,7 @@ git submodule update
 ./link.sh
 
 # use zsh
-chsh -s /bin/zsh
+chsh -s /usr/local/bin/zsh
 
 # setup vim
 vim +BundleInstall +qall
