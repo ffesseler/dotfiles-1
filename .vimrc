@@ -33,6 +33,7 @@ Bundle 'fatih/vim-go'
 Plugin 'dracula/vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'blueshirts/darcula'
 
 
 let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
@@ -75,7 +76,7 @@ filetype plugin indent on
 
 set autoindent
 
-colorscheme dracula
+colorscheme darcula
 
 
 " highlight last search term
