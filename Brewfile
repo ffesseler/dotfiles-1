@@ -24,7 +24,7 @@ install ansible
 install gist
 install docker
 install docker-compose
-install cask docker
+cask install docker
 
 # daft stuff
 install gti sl
@@ -55,9 +55,9 @@ cask install virtualbox
 cask install charles
 cask install unetbootin
 cask install phpstorm
-casl install pgadmin3
-
+cask install pgadmin3
 cask install java
+cask install karabiner
 
 # browsers
 cask install google-chrome google-chrome-beta google-chrome-canary chromium
