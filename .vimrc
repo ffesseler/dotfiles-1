@@ -30,7 +30,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'AndrewRadev/splitjoin.vim'
 Bundle 'rizzatti/dash.vim'
 Bundle 'fatih/vim-go'
-Plugin 'zenorocha/dracula-theme', {'rtp': 'vim/'}
+Plugin 'dracula/vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
