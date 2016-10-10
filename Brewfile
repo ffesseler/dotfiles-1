@@ -26,6 +26,7 @@ install docker
 install docker-compose
 cask install docker
 install tmux
+install reattach-to-user-namespace
 
 # daft stuff
 install gti sl
