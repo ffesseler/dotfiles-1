@@ -28,8 +28,7 @@ export PATH=/usr/local/sbin:$PATH
 
 # VIM
 #----
-export SVN_EDITOR=vi
-export EDITOR='mvim -f'
+export EDITOR='nvim'
 
 source ~/.dotfiles/aliases.sh
 
