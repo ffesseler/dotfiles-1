@@ -37,9 +37,12 @@ alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Shortcuts
 alias g="git"
-alias v="mvim"
-alias vim="mvim"
-alias :e="mvim"
+alias v="nvim"
+alias vim="nvim"
+alias nvim="nvim"
+alias e="nvim"
+alias :e="nvim"
+alias :E="nvim"
 
 # File size
 alias fs="stat -f \"%z bytes\""
@@ -92,7 +95,3 @@ function gz() {
 
 alias j="node -e 'console.log(JSON.stringify(JSON.parse(require(\"fs\").readFileSync(process.argv[1])), null, process.argv[2] || 4))'"
 
-alias vim="nvim"
-alias mvim="nvim"
-alias :e="nvim"
-alias :E="nvim"
