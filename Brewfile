@@ -25,6 +25,7 @@ install gist
 install docker
 install docker-compose
 cask install docker
+install tmux
 
 # daft stuff
 install gti sl
