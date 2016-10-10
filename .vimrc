@@ -147,3 +147,6 @@ command -nargs=+ Ggr execute 'Ggrep' <q-args> | cw
 let g:go_bin_path = expand("~/src/gocode/bin")
 " disable go autoinstall
 let g:go_disable_autoinstall = 1
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
