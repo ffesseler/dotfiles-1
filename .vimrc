@@ -2,39 +2,29 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'skammer/vim-css-color'
-Bundle 'chaquotay/ftl-vim-syntax'
-Bundle 'groenewege/vim-less'
-Bundle 'mattn/emmet-vim'
-Bundle 'tpope/vim-git'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-markdown'
-Bundle 'mattn/gist-vim'
-Bundle 'pangloss/vim-javascript'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'vim-scripts/VimClojure'
-Bundle 'davidbeckingsale/Smyck-Color-Scheme'
-Bundle 'editorconfig/editorconfig-vim'
-Bundle 'alampros/cf.vim'
-Bundle 'tjennings/git-grep-vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'AndrewRadev/splitjoin.vim'
-Bundle 'rizzatti/dash.vim'
-Bundle 'fatih/vim-go'
-Plugin 'dracula/vim'
+Plugin 'AndrewRadev/splitjoin.vim'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'davidbeckingsale/Smyck-Color-Scheme'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'gmarik/vundle'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'skammer/vim-css-color'
+Plugin 'tjennings/git-grep-vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'blueshirts/darcula'
 
+call vundle#end()
 
 let g:ctrlp_user_command = ['.git/', 'cd %s && git ls-files --exclude-standard -co']
 
@@ -58,7 +48,7 @@ set shortmess=aI
 " always set terminal title
 set title
 " don't put ugly |s into vbars
-set fillchars=vert:\
+set fillchars=vert:\ " needs a space
 " always leave 5 lines around cursor
 set scrolloff=5
 set sidescrolloff=5
@@ -76,7 +66,7 @@ filetype plugin indent on
 
 set autoindent
 
-colorscheme darcula
+colorscheme smyck
 
 
 " highlight last search term
@@ -91,21 +81,12 @@ set smartcase
 set gdefault
 
 " airline
-set guifont=Anonymous\ Pro\ for\ Powerline:h14
 let g:airline_powerline_fonts = 1
-let g:airline_theme="powerlineish"
+let g:airline_theme="base16"
 
+" filetype stuff
 au BufNewFile,BufRead *.json set ft=javascript
-
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Thorfile,config.ru}    set ft=ruby
-" au BufRead,BufNewFile *.less set ft=css
-
-au BufNewFile,BufRead *.ftl set ft=html.ftl
-
-au BufNewFile,BufRead *.gradle setf groovy
-au BufNewFile,BufRead *.cljs set ft=clojure
-
-au BufNewFile,BufRead {*.cfm,*.cfc} set expandtab!
 
 " press F2 before a paste to turn off autoindent
 set pastetoggle=<F2>
@@ -117,12 +98,15 @@ cmap w!! %!sudo tee > /dev/null %
 " use space to pagedown
 noremap <Space> <PageDown>
 " switch windows with ,
-nmap , <C-w><C-w>
-vnoremap < <gv
-vnoremap > >gv
-" cmd+/ comment
-nmap <D-/> <leader>c<space>
-vmap <D-/> <leader>c<space>
+"nmap , <C-w><C-w>
+"vnoremap < <gv
+"vnoremap > >gv
+" ctrl+/ comment
+nmap <S-c> <leader>c<space>
+vmap <S-c> <leader>c<space>
+" ctrl+r nerdtree
+noremap -- :NERDTreeToggle <cr>
+inoremap -- <Esc>:NERDTreeToggle <cr>
 " disable arrows
 "noremap <Up> <NOP>
 "noremap <Down> <NOP>
@@ -140,13 +124,6 @@ endif
 syntax on
 
 command -nargs=+ Ggr execute 'Ggrep' <q-args> | cw
-
-
-" golang stuff
-" $GOPATH
-let g:go_bin_path = expand("~/src/gocode/bin")
-" disable go autoinstall
-let g:go_disable_autoinstall = 1
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'

@@ -1,7 +1,7 @@
 # OH_MY_ZSH stuff
 #----------------
 export ZSH=$HOME/.oh-my-zsh
-export ZSH_THEME="avit"
+export ZSH_THEME="blinks"
 export DISABLE_AUTO_UPDATE=true
 plugins=(git history-substring-search ruby rbenv redis-cli)
 source $ZSH/oh-my-zsh.sh
