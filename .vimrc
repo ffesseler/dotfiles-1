@@ -104,9 +104,6 @@ noremap <Space> <PageDown>
 " ctrl+/ comment
 nmap <S-c> <leader>c<space>
 vmap <S-c> <leader>c<space>
-" ctrl+r nerdtree
-noremap -- :NERDTreeToggle <cr>
-inoremap -- <Esc>:NERDTreeToggle <cr>
 " disable arrows
 "noremap <Up> <NOP>
 "noremap <Down> <NOP>
