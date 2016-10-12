@@ -57,9 +57,13 @@ cask install virtualbox
 cask install charles
 cask install unetbootin
 cask install phpstorm
+cask install datagrip
 cask install pgadmin3
 cask install java
 cask install karabiner
+
+# design
+cask install sketch
 
 # browsers
 cask install google-chrome google-chrome-beta google-chrome-canary chromium
