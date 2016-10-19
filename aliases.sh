@@ -95,3 +95,4 @@ function gz() {
 
 alias j="node -e 'console.log(JSON.stringify(JSON.parse(require(\"fs\").readFileSync(process.argv[1])), null, process.argv[2] || 4))'"
 
+alias tmux="TERM=screen-256color-bce tmux"
